@@ -7,9 +7,10 @@ namespace iSurvivedBonelab.MonoBehaviours
 {
     public class Consumable : MonoBehaviour
     {
-        public Need type;
+        public string needDisplayName;
 
-        public MeshRenderer[] biteRenderers;
+        // TODO: Soon maybe
+        //public MeshRenderer[] biteRenderers;
 
         public AudioClip[] biteSounds;
         public AudioClip[] consumeSounds;
@@ -29,14 +30,19 @@ namespace iSurvivedBonelab.MonoBehaviours
 
         private int _curBites;
 
-        private MeshRenderer _curBiteRenderer;
+        // TODO: Soon maybe
+        //private MeshRenderer _curBiteRenderer;
+
+        private PlayerNeeds _playerNeeds;
+
+        private Need _curType;
 
         private void Start()
         {
             
         }
 
-        private void OnTriggerEnter(Collider collider)
+        private void OnTriggerEnter(Collider other)
         {
             
         }
@@ -46,5 +52,9 @@ namespace iSurvivedBonelab.MonoBehaviours
             
         }
 
+        private void Consume(Collider other)
+        {
+            
+        }
     }
 }
