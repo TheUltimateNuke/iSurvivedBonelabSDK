@@ -1,5 +1,4 @@
-﻿using MelonLoader;
-using SLZ.VFX;
+﻿using SLZ.VFX;
 using System;
 using UltEvents;
 using UnityEngine;

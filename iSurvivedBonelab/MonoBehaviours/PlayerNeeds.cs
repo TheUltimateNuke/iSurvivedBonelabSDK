@@ -1,5 +1,4 @@
-﻿using BoneLib;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 namespace iSurvivedBonelab.MonoBehaviours
