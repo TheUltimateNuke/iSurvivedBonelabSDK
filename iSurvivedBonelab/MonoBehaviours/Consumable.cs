@@ -1,4 +1,5 @@
-﻿using SLZ.VFX;
+﻿using MelonLoader;
+using SLZ.VFX;
 using System;
 using UltEvents;
 using UnityEngine;
@@ -26,7 +27,7 @@ namespace iSurvivedBonelab.MonoBehaviours
         public UltEvent<Collider, Consumable> onConsumed;
         public UltEvent<Collider, Consumable> onBite;
 
-        public string mouthTag = "Mouth";
+        public string mouthName = "Mouth";
 
         private int _curBites;
 

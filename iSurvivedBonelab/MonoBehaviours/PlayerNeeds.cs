@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using BoneLib;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace iSurvivedBonelab.MonoBehaviours
@@ -8,14 +9,19 @@ namespace iSurvivedBonelab.MonoBehaviours
     {
         public List<Need> needs;
 
+        public Need GetNeed(string name)
+        {
+            return needs.Find(item => item.DisplayName == name);
+        }
+
         private void Start()
         {
-
+            
         }
 
         private void Update()
         {
-
+            
         }
 
         private void DecayPlayerHealth(float amount)
