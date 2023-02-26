@@ -1,5 +1,7 @@
 ﻿using iSurvivedBonelab.MonoBehaviours;
-using SLZ.UI;
+using System.Collections.Generic;
+using System.IO;
+using System.Reflection;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,15 +10,15 @@ namespace iSurvivedBonelab
     [System.Serializable]
     public class Need
     {
-        public NeedPref prefs;
-        public NeedEle ele;
-
-        public Image imageBar;
-        public Slider simpleBar;
-
-        public string DisplayName { get; }
-
+        public string DisplayName;
         public bool enabled;
+
+        public Color barColor;
+        public Sprite icon;
+
+        [Tooltip("Optional")]
+        public Gauge gauge;
+
         public bool decayHealthWhenEmpty;
         public bool passiveDecay;
 
@@ -26,6 +28,9 @@ namespace iSurvivedBonelab
         public float decayRate;
         public float regenRate;
         public float healthDecayRate;
+
+        public NeedPref prefs;
+        public NeedEle ele;
 
         public void Add(float amount)
         {
@@ -37,9 +42,14 @@ namespace iSurvivedBonelab
             
         }
 
+        public float GetPercentage()
+        {
+            return curValue / maxValue;
+        }
+        
         public void CreatePrefsAndEle()
         {
             
-        }
+        } 
     }
 }

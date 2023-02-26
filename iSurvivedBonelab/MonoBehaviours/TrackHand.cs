@@ -1,10 +1,15 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace iSurvivedBonelab.MonoBehaviours
 {
-    // TODO: On HUD gameObject
+    [Elixir]
+    [DontAssignIntPtr]
     public class TrackHand : MonoBehaviour
     {
-
+        private void Update()
+        {
+            
+        }
     }
 }

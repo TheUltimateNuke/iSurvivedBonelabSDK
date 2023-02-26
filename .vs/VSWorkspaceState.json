@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\MonoBehaviours"
+    "\\iSurvivedBonelab",
+    "\\iSurvivedBonelab\\MonoBehaviours"
   ],
-  "SelectedNode": "\\MonoBehaviours",
+  "SelectedNode": "\\iSurvivedBonelab\\MonoBehaviours\\Consumable.cs",
   "PreviewInSolutionExplorer": false
 }
